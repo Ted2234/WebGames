@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="style.css">
-    <script src="ticTacToe.js" defer></script>
 </head>
 <body>
-    <header>
+
+    <header id ="header">
         <h1 id = "mainH1">Tic Tac Toe</h1>
     </header>
-    <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a id="game">Play Game</a></li>
-                <li><a id="rules">Rules</a></li>
+
+    <div id = "menuDiv">
+    <nav id = "menuNavBar">
+            <ul id = "menuNav">
+                <li class = "menu"><a class="item" href="../index.html">Home</a></li>
+                <li class = "menu"><a class="item" href="#rulesContainer">Rules</a></li>
             </ul>
         </nav>
+    </div>
 
     <div id="gameContainer">
         <h1>Game</h1>
@@ -35,7 +37,15 @@
         </div>
         <h2 id="statusText"></h2>
         <button id="restartBtn">Restart</button>
+    </div><br>
+    <div id = "rulesContainer">
+        <h1 class = "rules">Rules</h1>
+        <p class = "rules">The game is played on a grid that's 3 squares by 3 squares.</p>
+        <p class = "rules">You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.</p>
+        <p class = "rules">The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</p>
+        <p class = "rules">When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</p>
     </div>
+    <script src="ticTacToe.js" defer></script>
    </body>
    
 </html>

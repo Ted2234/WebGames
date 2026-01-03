@@ -1,45 +1,4 @@
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    border-radius: 2px;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-family: "Arial", sans-serif;
-    font-size: 50px;
-    cursor: pointer;
-    text-align: center;
-}
-#gameContainer{
-    font-family: "Arial", sans-serif;
-    text-align: center;
-    
-}
-#cellContainer{
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 240px;
-    margin: auto;
-    background-color: hsla(157, 15%, 54%, 0.192);
-}
-#restartBtn{
-    border: none;
-    font-size: 2rem;
-    padding: 1rem;
-    background-color: hsla(0, 96%, 50%, 0.267);
-    border-radius: 2rem;
-    cursor: pointer;
-    box-shadow: 0px 12px 0px 0px hsla(0, 96%, 20%, 0.267);
-    
-}
-#restartBtn:hover{
-    background-color: hsla(0, 96%, 60%, 0.267);
-}
-#restartBtn:active{
-    transform: translateY(7px);
-    box-shadow: 0px 8px 0px 0px hsla(0, 96%, 20%, 0.267);
-}
-#header{
+header{
     background-color: hsla(240, 28%, 46%, 0.445);
     text-align: center;
     font-family: "Arial", sans-serif;
@@ -84,9 +43,7 @@
     border-right: 5px;
     margin: 5px;
 }
-body, html{
-   height: 100vh;
-}
+
 #rulesContainer{
     padding: 10px;
     margin: 10px 10px;
@@ -94,4 +51,31 @@ body, html{
 .rules{
     font-family: "Arial", sans-serif;
     text-align: justify;
+}
+#gameBoard{
+    border: 3px solid;
+
+}
+#gameContainer{
+    text-align: center;
+}
+#scoreText{
+    font-family: "Arial", sans-serif;
+    font-size: 3rem;
+}
+#resetBtn{
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: hsla(0, 96%, 50%, 0.267);
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 0px 12px 0px 0px hsla(0, 96%, 20%, 0.267);
+}
+#resetBtn:hover{
+    background-color: hsla(0, 100%, 40%, 0.452);
+}
+#resetBtn:active{
+    transform: translateY(7px);
+    box-shadow: 0px 8px 0px 0px hsla(0, 96%, 20%, 0.267);
 }
