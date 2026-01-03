@@ -1,0 +1,25 @@
+header{
+    background-color: hsla(240, 28%, 46%, 0.445);
+    display: grid;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+
+}
+#headerNav{
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+#gamesList{
+    border: 2px;
+    list-style:circle;
+    background-color: hsla(0, 100%, 62%, 0.658);
+    border-radius: 2rem;
+    margin-right: 10px;
+    color: hsl(0, 0%, 100%);
+}
+.gamesList{
+    border: 2px;
+    color: hsl(0, 0%, 100%);
+}
